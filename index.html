@@ -2,6 +2,7 @@
 <html lang="de-CH">
 <head>
 <meta charset="utf-8">
+<!-- Sicher da · Website One-Pager · V5.3 -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Sicher da. · Persönlicher Telefonservice</title>
 <meta name="description" content="Ein persönlicher Telefonservice zum Fragen, Überlegen oder Reden. Eine feste Ansprechperson, die zuhört, mitdenkt und Sie mit der Zeit kennt.">
@@ -258,6 +259,8 @@
   footer .cols{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:32px;}
   @media(max-width:720px){ footer .cols{grid-template-columns:1fr;} }
   footer a{color:#EAD9C4;}
+  footer .foot-hours{display:block;margin-top:12px;color:#C7D8D6;}
+  footer .foot-hours b{display:block;color:#fff;font-weight:600;font-size:13px;letter-spacing:.04em;margin-bottom:2px;}
 
   /* Mobile-Feinschliff 360–390 px */
   @media(max-width:640px){
@@ -268,6 +271,38 @@
   }
   @media(max-width:400px){ .wrap{padding:0 18px;} }
 
+
+  /* Konkrete Beispiele (V5.3 · Variante A: Register mit Trennlinien) */
+  #beispiele .sec-intro{max-width:74ch;text-wrap:balance;}
+  .examples{display:grid;grid-template-columns:repeat(3,1fr);gap:0;margin-top:28px;}
+  .ex-group{padding:4px 38px;border-left:1px solid var(--line);}
+  .ex-group:first-child{padding-left:0;border-left:0;}
+  .ex-group:last-child{padding-right:0;}
+  .ex-group .lab{display:inline-flex;align-items:center;gap:11px;width:100%;
+                 padding-bottom:14px;margin-bottom:18px;border-bottom:2px solid var(--nebel);
+                 font-family:var(--dsp);font-weight:700;font-size:16px;letter-spacing:.06em;
+                 color:var(--petrol);text-transform:uppercase;}
+  .ex-group .lab::before{content:"";width:11px;height:11px;border-radius:50%;background:var(--apricot);flex:none;}
+  .ex-group h3{font-family:var(--dsp);font-size:22px;font-weight:700;color:var(--ink);margin:0 0 18px;line-height:1.25;}
+  .ex-list{list-style:none;margin:0;padding:0;}
+  .ex-list li{position:relative;padding-left:22px;margin:0 0 15px;color:var(--ink-soft);font-size:17px;line-height:1.5;}
+  .ex-list li::before{content:"";position:absolute;left:3px;top:.66em;width:6px;height:6px;border-radius:50%;background:rgba(15,82,87,.32);}
+  .ex-note{margin-top:18px;padding-top:14px;border-top:1px solid var(--line);color:var(--ink);font-weight:600;font-size:16px;line-height:1.45;}
+  @media(max-width:820px){
+    .examples{grid-template-columns:1fr;}
+    .ex-group{border-left:0;padding:24px 0 0;}
+    .ex-group:first-child{padding-top:0;}
+    .ex-group + .ex-group{border-top:1px solid var(--line);}
+    .ex-note .brk{display:none;}
+  }
+  /* Abschluss-Callout (V5.2) — ruhiger horizontaler Abbinder, kein zweiter CTA */
+  .ex-close-band{position:relative;margin:48px 0 0;background:var(--nebel);border-radius:20px;
+                 padding:30px 40px;overflow:hidden;}
+  .ex-close-band::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--apricot);}
+  .ex-close-band .cl-lead{font-family:var(--dsp);font-weight:700;font-size:clamp(20px,2.2vw,25px);
+                          color:var(--petrol);margin:0 0 8px;line-height:1.3;}
+  .ex-close-band .cl-rest{font-size:18px;color:var(--ink-soft);margin:0;line-height:1.55;max-width:62ch;}
+  @media(max-width:820px){ .ex-close-band{padding:26px 24px 26px 28px;} }
 </style>
 </head>
 <body>
@@ -348,6 +383,57 @@
         <p style="margin-top:12px">Etwas Schönes, etwas Ärgerliches oder einfach, wie Ihr Tag war.</p>
         <p class="mean">Auch dafür ist Zeit.</p>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- 1b · KONKRETE BEISPIELE -->
+<section id="beispiele" class="band g-paper">
+  <div class="wrap">
+    <div class="lead-kicker">Ganz konkret</div>
+    <h2 class="sec">Womit Sie uns zum Beispiel anrufen können.</h2>
+    <p class="sec-intro">Es braucht keinen besonderen Grund. Manchmal ist etwas unklar, manchmal möchte man eine Entscheidung durchdenken und manchmal einfach etwas erzählen.</p>
+    <div class="examples">
+      <div class="ex-group">
+        <div class="lab">Fragen</div>
+        <h3>Wenn etwas unklar ist</h3>
+        <ul class="ex-list">
+          <li>„Meine Tochter schreibt von einer neuen Nummer. Ist das wirklich sie?“</li>
+          <li>„Ich soll wegen eines Pakets etwas bezahlen. Ist diese SMS echt?“</li>
+          <li>„Was bedeutet dieses Schreiben – und muss ich etwas tun?“</li>
+          <li>„Ich verstehe diese Rechnung nicht ganz.“</li>
+          <li>„Wie stelle ich das auf meinem Handy ein?“</li>
+        </ul>
+        <p class="ex-note">Kommt Ihnen etwas komisch oder unklar vor: lieber zuerst nachfragen.</p>
+      </div>
+      <div class="ex-group">
+        <div class="lab">Überlegen</div>
+        <h3>Wenn Sie unsicher sind</h3>
+        <ul class="ex-list">
+          <li>„Soll ich auf dieses Angebot eingehen?“</li>
+          <li>„Ich habe zwei Möglichkeiten und weiss nicht, welche besser zu mir passt.“</li>
+          <li>„Soll ich zusagen oder lieber noch warten?“</li>
+          <li>„Etwas fühlt sich für mich nicht ganz richtig an. Ich möchte eine zweite Sicht hören.“</li>
+          <li>„Ich möchte das erst einmal mit jemandem durchdenken.“</li>
+        </ul>
+        <p class="ex-note">Wir entscheiden nicht für Sie.<br class="brk"> Wir helfen Ihnen, Ihre Gedanken<br class="brk"> zu sortieren.</p>
+      </div>
+      <div class="ex-group">
+        <div class="lab">Reden</div>
+        <h3>Wenn Sie erzählen möchten</h3>
+        <ul class="ex-list">
+          <li>„Heute ist mir etwas passiert, das möchte ich jemandem erzählen.“</li>
+          <li>„Ich habe etwas Schönes erlebt und möchte es teilen.“</li>
+          <li>„Über etwas habe ich mich heute richtig geärgert.“</li>
+          <li>„Etwas beschäftigt mich gerade.“</li>
+          <li>„Oder einfach erzählen, wie mein Tag war.“</li>
+        </ul>
+        <p class="ex-note">Nicht jedes Gespräch braucht ein Problem. Manchmal tut es einfach gut, jemanden zu haben, der zuhört.</p>
+      </div>
+    </div>
+    <div class="ex-close-band">
+      <p class="cl-lead">Sie können einfach anrufen.</p>
+      <p class="cl-rest">Wenn Sie jemanden zum Fragen, Mitdenken oder Zuhören möchten, sind wir für Sie da.</p>
     </div>
   </div>
 </section>
@@ -517,6 +603,7 @@
       <div>
         <h4>Betreiber &amp; Kontakt</h4>
         Betrieben von der DNLYS AG<br>Aus der Zentralschweiz. Für die ganze Schweiz.<br><br><a href="mailto:info@sicherda.ch">info@sicherda.ch</a><br><a href="tel:0900700100">0900 700 100</a>
+        <span class="foot-hours"><b>Erreichbar</b>Montag bis Freitag<br>09:00–11:30 Uhr<br>13:30–18:00 Uhr</span>
       </div>
       <div>
         <h4>Preisdeklaration</h4>
